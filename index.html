@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Top 10 pages and groups by reach amplifying online hate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Source+Serif+4:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef;--fg:#1b1b1f;--muted:#62626b;--line:#e2ded3;--tipbg:#fffdf8;--tiph:#2b2b30;
+  --shrines:#b45309;--hindus:#be123c;--women:#7c3aed;--atheists:#1d4ed8;--nonprayer:#0f766e;--ahmadis:#4d7c0f;--multi:#52525b;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141418;--fg:#f1efe9;--muted:#a4a4ae;--line:#33333c;--tipbg:#1c1c22;--tiph:#3a3a44;
+  --shrines:#f59e0b;--hindus:#fb7185;--women:#a78bfa;--atheists:#60a5fa;--nonprayer:#2dd4bf;--ahmadis:#a3e635;--multi:#a1a1aa;}}
+:root[data-theme="dark"]{
+  --bg:#141418;--fg:#f1efe9;--muted:#a4a4ae;--line:#33333c;--tipbg:#1c1c22;--tiph:#3a3a44;
+  --shrines:#f59e0b;--hindus:#fb7185;--women:#a78bfa;--atheists:#60a5fa;--nonprayer:#2dd4bf;--ahmadis:#a3e635;--multi:#a1a1aa;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);overflow:hidden}
+body{height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));display:grid;place-items:center;color:var(--fg);font-family:Inter,"Noto Sans Bengali",system-ui,sans-serif}
+.frame{--s:min(100vw,calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px)));width:var(--s);height:var(--s);container-type:size;position:relative;background:var(--bg);padding:4.6cqw 5cqw 3.6cqw;display:flex;flex-direction:column;overflow:hidden}
+.rule{width:9cqw;height:1cqw;background:var(--fg);margin-bottom:2.2cqw;flex:none}
+h1{font:700 5.3cqw/1.1 "Source Serif 4",Georgia,serif;margin:0 0 1.6cqw;letter-spacing:-.01em;flex:none}
+.sub{font-size:2.35cqw;line-height:1.35;color:var(--muted);margin:0 0 2.2cqw;flex:none}
+.legend{display:flex;flex-wrap:wrap;gap:.6cqw 2.4cqw;font-size:1.95cqw;margin-bottom:1.8cqw;flex:none}
+.legend span{display:inline-flex;align-items:center;gap:.8cqw}
+.legend i{width:1.7cqw;height:1.7cqw;border-radius:50%;flex:none}
+.list{flex:1;min-height:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.row{flex:1;min-height:0;display:grid;grid-template-columns:3cqw 30cqw 1fr;align-items:center;gap:1.4cqw;border-bottom:1px solid var(--line);cursor:default;outline:none}
+.row:hover,.row.on{background:color-mix(in srgb,var(--fg) 6%,transparent)}
+.row:focus-visible{outline:2px solid var(--fg)}
+.rk{color:var(--muted);font-size:1.8cqw;text-align:right}
+.nm{font-size:2.3cqw;font-weight:600;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trk{display:flex;align-items:center;gap:1cqw;min-width:0}
+.bar{flex:none;height:62%;max-height:3.6cqw;min-height:2cqw;border-radius:0 .6cqw .6cqw 0;width:0;transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.in .bar{width:calc((100% - 10.5cqw) * var(--r))}
+.val{font-size:2.15cqw;font-variant-numeric:tabular-nums;white-space:nowrap}
+.foot{flex:none;display:flex;justify-content:space-between;gap:2cqw;margin-top:1.6cqw;font-size:1.7cqw;color:var(--muted)}
+#tip{position:absolute;z-index:20;left:0;top:0;width:min(max(300px,52cqw),calc(100% - 12px));background:var(--tipbg);color:var(--fg);border:1px solid var(--line);border-radius:6px;box-shadow:0 8px 28px rgba(0,0,0,.28);pointer-events:none;opacity:0;transition:opacity .12s;overflow:hidden;font-size:max(12px,2.1cqw)}
+#tip.show{opacity:1}
+#tip h3{margin:0;padding:.55em .8em;background:var(--tiph);color:#fff;font-size:1.05em;font-weight:600;line-height:1.35}
+#tip .tr{display:grid;grid-template-columns:7.2em 1fr;gap:.7em;padding:.55em .8em;border-top:1px solid var(--line)}
+#tip h3+.tr{border-top:0}
+#tip .k{color:var(--muted)}
+#tip .v{text-align:right}
+#tip .post{white-space:pre-line;line-height:1.6;overflow-wrap:anywhere}
+@container (max-width:560px){
+  #tip .tr.p{grid-template-columns:1fr;gap:.2em}
+}
+@media (prefers-reduced-motion:reduce){.bar,#tip{transition:none}}
+</style>
+</head>
+<body>
+<div class="frame" id="frame">
+  <div class="rule"></div>
+  <h1>Top 10 pages and groups by reach amplifying online hate</h1>
+  <p class="sub">Facebook pages sharing hate speech and calls for exclusion, ranked by followers/members. Hover or tap a bar to read the post.</p>
+  <div class="legend" id="legend"></div>
+  <div class="list" id="list"></div>
+  <div class="foot"><span><b>Source:</b> The Daily Star analysed posts</span><span><b>Visual:</b> Abir Ayon</span></div>
+  <div id="tip" role="tooltip"></div>
+</div>
+
+<script>
+var N=10;
+var G={
+  shrines:{n:"Shrines (Mazar)",v:"--shrines"},
+  hindus:{n:"Hindus",v:"--hindus"},
+  women:{n:"Women",v:"--women"},
+  atheists:{n:"Atheists/non-believers",v:"--atheists"},
+  nonprayer:{n:"Non-praying Muslims",v:"--nonprayer"},
+  ahmadis:{n:"Ahmadis/Qadianis",v:"--ahmadis"},
+  multi:{n:"Multiple targets",v:"--multi"}
+};
+var ALL=[
+["Single-পোলাপাইন","women",620000,"ভার্সিটির মেয়ে বিয়ে করা উচিত না কারণ, ফ্রি মিক্সিংয়ে অভ্যস্ত নারী ব‌উ হ‌ওয়ার যোগ্য নয়।"],
+["বাংলাদেশ জামায়াতে ইসলামী ওলামা বিভাগ( Follow to follow)","atheists",455700,"স্লোগান একটাই নাস্তিকদের আস্তানা গুরিয়ে দাও,  ভেঙ্গে দাও"],
+["Shaikh Dr. Muzaffar Bin Muhsin","nonprayer",381000,"যাদের কাফের হ‌ওয়ার ব্যাপারে কোন সন্দেহ নেই ‼️ 🎙️শাইখ ড. মুযাফফর বিন মুহসিন/ছালাত পরিত্যাগকারীর জন্য ভয়ঙ্কর শাস্তি|| শাইখ ড. মুযাফফর বিন মুহসিন"],
+["Bangladesh Jamaate-Islami","atheists",350500,"নাস্তিক বাউকে শাহবাগ চত্বরে হত্যা করে কুত্তার মত ঝুলিয়ে রাখতে হবে আল্লাহ জমিনে নাস্তিক এর হ্মমা নাই\nআর কতদিন জিহাদ এর ডাক দেওয়া উচিত দেশ থেকে নাস্তিকদের উচ্ছেদ করা জন্য বাংলার জমিন আল্লাহ জমিন নাস্তিক কাফের এর ঠাই নাই"],
+["আমার প্রিয় নরসিংদী","shrines",342800,"ব্রাহ্মণবাড়িয়া থেকে আগত মাদক সেবী কথিত ভন্ড পীর শামসুল হক নামে এক ব্যক্তি ফকিরেরচর গ্রামের পশ্চিমে আস্তানা গাড়ে এবংআস্তানা  ঘিরে মাদকের রমরমা ব্যবসা শুরু হয়েছে।  সেখানে প্রতি রাতে গাজা, মদ জোয়ার আসর বসাই।এবং ইসলামের অপব্যাখ্যার মাধ্যমে মানুষকে গুমরাহীর দিকে ঠেলে দিচ্ছে।  ফলে  এলাকার সহজ-সরল  স্কুল - কলেজ গামী শিশু -কিশোররা মাদক সেবন ও কিশোর গ্যাং ও আস্তানার নামে চাদাবাজিতে আসক্ত হয়ে পড়ে।যদ্দরুন এলাকায় চুরি ছিনতাই,  আশঙ্কাজনক হারে বৃদ্ধি পেয়েছ। এবং বিভিন্ন বয়সী নারী-পুরুষরা সেখানে  অবাধে মেলামেশা করছে।ফলে এলাকার সামাজিক পরিবেশ নষ্ট হচ্ছে।"],
+["Shahin Mia","hindus",306000,"চুপ করে বসে থাকলে হবে\nএভাবে উড়িয়ে দিতে হবে\nআপনি রাজি আছেন তো"],
+["Rahamot Ullah","hindus",247700,"রংপুরে রামের মূ-র্তি তৈরী হচ্ছে! অথচ এই এলাকায় প্রায় আড়াই লক্ষ মুসলমানের বসবাস। হি--ন্দুর সংখ্যা সা-কুল্যে ২০ হাজারের মত।\nএই আড়াই লক্ষ অথর্ব মুসলমান মুখে কুলুপ এঁটে বসে আছে। আর এ দিকে ভা-রতে আজকে ১৫ টি মসজিদ সিলগালা করা হয়েছে!\nঅথচ হতোভাগা মুসলমানের কোনো ভ্রুক্ষেপ নেই, কাফের দেশ ব্রাজিল আর্জেন্টিনা বিশ্বকাপ উম্মাদনায় ব্যস্ত। আফসোস আর আফসোস..!!!!  যে দেশের আলেম সমাজ শেখ মুজিব ও জিয়ার মু-র্তি নিয়ে খুব ঈমানী জজবা দেখাইছে তারাও এখন চুপ একে বারে...!!!!"],
+["Abu Taleb","shrines",241500,"প্রতিটি মাজার শির্কের আস্তানা।\nসরকারের উচিৎ এসব শির্কের দূর্গ মাটির সাথে মিশিয়ে দিয়ে তওহিদ প্রতিষ্ঠা করা।"],
+["আলেম-উলামার হক্ক কথা","shrines",234000,"এই মাজার ব্যবসা সিন্ডিকেট ভেঙে তছনছ করে দিতে হবে।\nমাজার পূজা করা সম্পূর্ণ শিরক।"],
+["Dhaka Central University ☑️","women",232100,"তানজিম সাকিব এ জন্য ই বলছিলেন ভার্সিটিতে পড়া মেয়ে কখনো ভালো মা হতে পারে না।\nটিএসসি, ঢাকা বিশ্ববিদ্যালয়।"],
+["Hathazari Vision24.Tv","ahmadis",220000,"রাষ্ট্রীয় ভাবে কাদিয়ানীদের কাফের ঘোষণা করতে হবে, আল্লামা জুনায়েদ বাবুনগরী। রাষ্ট্রীয় ভাবে কাদিয়ানীর অমুসলিম ও কাফের ঘোষণা করতে হবে।  এরা কোন মুসলমান নয়। এতে কারো কোন দ্বিমত নাই। এরা এদেশে সংখ্যালগু (কাফের) হিসেবে বসবাস করতে পারবে।"],
+["Farid Khan Pinaaki Bhattacharya","shrines",211200,"আলহামদুলিল্লাহ, বন্ড দেওয়ান ভাগির মাজার ভেঙে গুড়িয়ে আগুন দিয়েছে ঈমানদার তৌহিদী জনতা।"],
+["Jamuna tv||যমুনা টিভি","hindus",185600,"ঢাকার ঢাকেশ্বরী মন্দির ৩০০ বছর আগে আমাদের মসজিদ ছিল।\nএখন আমরা আমাদের মসজিদ ফেরত চাই।"],
+["Talukder Muhammad","shrines",171900,"বাংলাদেশের ৬৪ জেলাতে যত মাজার আছে, গাঞ্জুট্টির আস্তানা আছে, উচু কবর আছে সব ভেঙ্গে মাটির সাথে গুড়িয়ে দিতে হবে। বাংলার জমিনে ইসলাম ধর্মের নামে কোন শিরকী বিদ’আতী কাজ চলতে দেওয়া হবে না। বাংলার ৬৪ জেলায় ৬৪ লক্ষ আব্দুর রাযযাক বিন ইউসুফ তৈরি হবে। শিরক-বিদ’আত ও গাঞ্জুট্টির আস্তানার মূল উৎপাটন করা হবে। ইনশাআল্লাহ। “শুধু সময়ের ব্যাপার মাত্র।” Just wait and see…!"],
+["Kamal Hosan","hindus",161000,"রংপুরে রামের বিশাল মূর্তি নির্মাণ শেষ না হতেই টাঙ্গাইলে বি*ষ্ণুর দানবীয় মূর্তি নির্মাণ দেশের বিরুদ্ধে গভীর ষড়যন্ত্রের পূর্বাভাষ, বাংলাদেশ দখলের সূচনা পর্ব,\nঅতএব এগুলো অবশ্যই ভেঙে ফেলতে হবে,\nঅন্যথায় বাংলাদেশের অস্তিত্ব হুমকির মুখে পড়বে,রংপুর ও টাঙ্গাইলবাসি জেগে উঠোন, দেশপ্রেমিক জনতা উঠোন, এগুলো ভেঙ্গে ফেলে দিন..।।।"],
+["আহলে হাদিস বাংলাদেশ Ahle Hadith Bangladesh","multi",149100,"মূর্খ ছাড়া কেউ পীরের মুরিদ হয় না/মাাজার ভাঙা ফরজ/দাড়াতেও যার তুচ্ছ বাশের প্রয়োজন হয় সে আবার কি করে প্রভু হয়?/সাবধান! বেনামাজি কি হত্যাযোগ্য? কুরআন ও সহিহ হাদিসের আলোকে বেনামাজির আসল হুকুম কী? আলেমদের এই কড়া বয়ানটি আপনার ঈমান নাড়িয়ে দিবে!","Non-praying Muslims + Shrines (Mazar) + Hindus"]
+];
+var D=ALL.slice(0,N);
+var fmt=function(n){return n.toLocaleString("en-US")};
+var max=D[0][2];
+var frame=document.getElementById("frame"),tip=document.getElementById("tip"),cur=null,curRow=null;
+
+var seen={},legend=document.getElementById("legend");
+D.forEach(function(d){
+  if(seen[d[1]])return;seen[d[1]]=1;
+  var s=document.createElement("span");
+  s.innerHTML='<i style="background:var('+G[d[1]].v+')"></i><span></span>';
+  s.lastChild.textContent=G[d[1]].n;legend.appendChild(s);
+});
+
+function mk(cls,txt){var e=document.createElement("div");e.className=cls;if(txt)e.textContent=txt;return e}
+function show(d,row){
+  cur=d;
+  if(curRow)curRow.classList.remove("on");
+  curRow=row;row.classList.add("on");
+  tip.textContent="";
+  var h=document.createElement("h3");h.textContent=d[0];tip.appendChild(h);
+  var r1=mk("tr");r1.appendChild(mk("k","Followers/Members"));r1.appendChild(mk("v",fmt(d[2])));tip.appendChild(r1);
+  var r2=mk("tr");r2.appendChild(mk("k","Primary target group"));r2.appendChild(mk("v",d[4]||G[d[1]].n));tip.appendChild(r2);
+  var r3=mk("tr p");r3.appendChild(mk("k","Post Content"));r3.appendChild(mk("post",d[3]));tip.appendChild(r3);
+  tip.classList.add("show");
+}
+function hide(){
+  tip.classList.remove("show");cur=null;
+  if(curRow){curRow.classList.remove("on");curRow=null}
+}
+function place(x,y){
+  var fr=frame.getBoundingClientRect(),fx=x-fr.left,fy=y-fr.top;
+  var w=tip.offsetWidth,h=tip.offsetHeight;
+  var left=Math.max(6,Math.min(fx+14,fr.width-w-6));
+  var t=fy+16;if(t+h>fr.height-6)t=fy-h-12;
+  t=Math.max(6,t);
+  tip.style.left=left+"px";tip.style.top=t+"px";
+}
+function atRow(row){var r=row.getBoundingClientRect();place(r.left+r.width*.3,r.bottom-6)}
+
+var list=document.getElementById("list");
+D.forEach(function(d,i){
+  var g=G[d[1]],b=document.createElement("div");
+  b.className="row";b.tabIndex=0;
+  b.innerHTML='<span class="rk"></span><span class="nm"></span><span class="trk"><span class="bar"></span><span class="val"></span></span>';
+  b.children[0].textContent=i+1;
+  b.children[1].textContent=d[0].replace(/\s*\(.*?\)\s*$/,"").replace(/[\u2611\uFE0F]/g,"").trim();
+  var bar=b.querySelector(".bar");
+  bar.style.background="var("+g.v+")";bar.style.setProperty("--r",(d[2]/max).toFixed(4));
+  b.querySelector(".val").textContent=fmt(d[2]);
+  b.addEventListener("pointerenter",function(e){if(e.pointerType==="mouse"){show(d,b);place(e.clientX,e.clientY)}});
+  b.addEventListener("pointermove",function(e){if(e.pointerType==="mouse")place(e.clientX,e.clientY)});
+  b.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse")hide()});
+  b.addEventListener("click",function(e){
+    if(e.pointerType==="mouse")return;
+    e.stopPropagation();
+    if(cur===d){hide();return}
+    show(d,b);atRow(b);
+  });
+  b.addEventListener("focus",function(){show(d,b);atRow(b)});
+  b.addEventListener("blur",hide);
+  list.appendChild(b);
+});
+document.addEventListener("click",function(){if(cur)hide()});
+requestAnimationFrame(function(){requestAnimationFrame(function(){list.classList.add("in")})});
+</script>
+</body>
+</html>
